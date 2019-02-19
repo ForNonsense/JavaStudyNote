@@ -13,3 +13,10 @@ GOF23学习笔记
   枚举模式优于饿汉模式
   静态内部类模式优于懒汉模式
   
+面向对象设计的基本原则
+ OCP 开闭原则Open-Closed Principle
+   一个软件的实体应该对扩展开放，对修改关闭
+ DIP 依赖倒转原则Dependence Inversion Principle
+   要针对接口编程，不要针对实现编程
+ LoD Law of Demeter 
+   只与你直接的朋友通信，而避免和陌生人通信
