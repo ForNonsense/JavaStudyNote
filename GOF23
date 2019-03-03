@@ -39,6 +39,7 @@ GOF23学习笔记
   leaf与composite实现component的相同方法，使二者具体相同的处理方式
   
 9.装饰模式
+  decorator 动态为对象增加新功能
   
   
   
