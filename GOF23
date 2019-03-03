@@ -30,7 +30,7 @@ GOF23学习笔记
   adapter用于adaptee与client之间的适配
   
 6.代理模式
-  
+  核心作用：通过代理，控制对对象的访问！AOP（Aspect Oriented Programming 面向切面编程)的微观实现。
   
 7.桥接模式
   一个类内部有另一个类的私有属性，通过该属性联结两个类的关系
