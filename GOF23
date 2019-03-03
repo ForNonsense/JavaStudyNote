@@ -31,6 +31,36 @@ GOF23学习笔记
   
 6.代理模式
   核心作用：通过代理，控制对对象的访问！AOP（Aspect Oriented Programming 面向切面编程)的微观实现。
+  -- proxy define
+  import java.lang.reflect.InvocationHandler;
+  import java.lang.reflect.Method;
+  public class ProxyStar implements InvocationHandler {
+	private IStar iStar;
+
+	public ProxyStar(IStar iStar) {
+		this.iStar = iStar;
+	}
+
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		Object obj = null;
+		if (method.getName().equals("sing")) {
+			method.invoke(iStar, args);
+		}
+		return obj;
+	}
+}
+-- main define
+import java.lang.reflect.Proxy;
+
+public class Client {
+	public static void main(String[] args) {
+		Star s = new Star();
+		ProxyStar proxyStar = new ProxyStar(s);
+		IStar proxy = (IStar)Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[]{IStar.class},proxyStar);
+		proxy.sing();
+	}
+}
   
 7.桥接模式
   一个类内部有另一个类的私有属性，通过该属性联结两个类的关系
