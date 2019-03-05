@@ -96,3 +96,5 @@ public class Client {
 16.解释器模式
   interpreter
   
+17.访问者模式
+  visitor
