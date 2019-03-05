@@ -93,4 +93,6 @@ public class Client {
 15.命令模式
   command
 
-
+16.解释器模式
+  interpreter
+  
