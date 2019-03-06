@@ -98,3 +98,9 @@ public class Client {
   
 17.访问者模式
   visitor
+
+18.策略模式
+  strategy
+  
+19.模版方法模式
+  template method
